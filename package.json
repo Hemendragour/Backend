@@ -1,0 +1,15 @@
+{
+  "name": "backend-chai-or-code",
+  "version": "1.0.0",
+  "description": "chai or code backend",
+  "type":"module",
+  "main": "index.js",
+  "scripts": {
+    "test":"nodemon scr/index.js"
+  },
+  "keywords": [
+    "javasript"
+  ],
+  "author": "Hemendra gour",
+  "license": "ISC"
+}
