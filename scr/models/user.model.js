@@ -19,17 +19,17 @@ const userSchema = new Schema(
             lowercase: true,
             trim: true
         },
-        fullname: {
+        fullName: {
             type: String,
             required: true,
             trim: true,
             index: true
         },
-        avatar: {
-            type: String,
-            required: true,
+        // avatar: {
+        //     type: String,
+        //     required: true,
 
-        },
+        // },
         coverImage: {
             type: String,
 
@@ -38,7 +38,7 @@ const userSchema = new Schema(
             type: Schema.Types.ObjectId,
             ref: "Video"
         },
-        passwod: {
+        password: {
             type: String,
             required: [true, 'password is required']
         },
@@ -93,4 +93,4 @@ userSchema.methods.generateRefreshToken = function () {
 }
 
 
-export const user = mongoose.model("User", userSchema)
+export const User = mongoose.model("User", userSchema)
